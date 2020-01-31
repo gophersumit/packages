@@ -1,11 +1,12 @@
 package main
 
-import "net/http"
-
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func handleRequest(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("fresh package : hot reloading for your apps!"))
+	w.Write([]byte("fresh package : hot reloading for your apps!!!"))
 }
 
 func main() {
